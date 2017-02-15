@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caaUJ3e" component="$model/UI2/system/components/justep/window/window" design="device:m;resolution:360 x 640;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caaUJ3e" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/toggle,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.caaUJ3e{background-color: rgb(255, 255, 255); color: rgb(130, 130, 130)} .interval.caaUJ3e{height: 10px; background-color: rgb(238, 238, 238)} .x-titlebar.caaUJ3e .x-titlebar-title.caaUJ3e{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.caaUJ3e .x-titlebar-left.caaUJ3e{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.caaUJ3e .x-titlebar-right.caaUJ3e{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.caaUJ3e .x-titlebar-title.caaUJ3e{} .x-titlebar.caaUJ3e .btn.caaUJ3e{} .x-titlebar.caaUJ3e .btn.caaUJ3e &gt; span.caaUJ3e{font-size: 10px; line-height: 1} .btnImg.caaUJ3e{border-radius: 30px; color: rgb(255, 255, 255)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="caaUJ3e" class="caaUJ3e"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="winRec" style="left:52px;top:13px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="caaUJ3e" class="caaUJ3e"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="msg_dlg" style="left:89px;top:13px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="caaUJ3e" class="caaUJ3e"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay caaUJ3e" __cid="caaUJ3e"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal caaUJ3e" __cid="caaUJ3e">  
+      <div class="x-modal-inner caaUJ3e" __cid="caaUJ3e"> 
+        <div class="x-modal-title caaUJ3e" __cid="caaUJ3e"/>  
+        <div class="x-modal-text caaUJ3e" __cid="caaUJ3e"/>  
+        <input class="x-modal-prompt-input caaUJ3e" type="text" __cid="caaUJ3e"/> 
+      </div>  
+      <div class="x-modal-buttons caaUJ3e" __cid="caaUJ3e"> 
+        <a class="x-modal-button x-modal-button-bold OK caaUJ3e" value="ok" __cid="caaUJ3e">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes caaUJ3e" value="yes" __cid="caaUJ3e">是</a>  
+        <a class="x-modal-button x-modal-button-bold No caaUJ3e" value="no" __cid="caaUJ3e">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel caaUJ3e" value="cancel" __cid="caaUJ3e">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p33f58a6473a14cc89e5bf409898c0363-iosstatusbar caaUJ3e" xid="mainPanel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caaUJ3e"> 
+    <div class="x-panel-top caaUJ3e" xid="top" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caaUJ3e"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar caaUJ3e" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;设置&quot;}" __cid="caaUJ3e"> 
+        <div class="x-titlebar-left caaUJ3e" xid="div_title_left" __cid="caaUJ3e"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon caaUJ3e" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="caaUJ3e"> 
+            <i class="icon-chevron-left caaUJ3e" xid="i1" __cid="caaUJ3e"/>  
+            <span xid="span12" __cid="caaUJ3e" class="caaUJ3e"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title caaUJ3e" xid="div_title_title" id="tops" __cid="caaUJ3e">设置</div>  
+        <div class="x-titlebar-right  caaUJ3e" xid="div_title_right" __cid="caaUJ3e"> 
+          <div class="empty caaUJ3e" __cid="caaUJ3e"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content caaUJ3e" xid="infoContent" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caaUJ3e"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full caaUJ3e" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:false}" __cid="caaUJ3e"> 
+        <div class="x-contents-content x-cards active caaUJ3e" xid="infoCnt" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="caaUJ3e"> 
+          <div class="x-scroll caaUJ3e" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="caaUJ3e"> 
+            <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group caaUJ3e" xid="controlGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsible&quot;:false,&quot;title&quot;:&quot;系统设置&quot;}" __cid="caaUJ3e"> 
+              <div class="x-control-group-title caaUJ3e" xid="controlGroupTitle1" __cid="caaUJ3e"> 
+                <span xid="span31" __cid="caaUJ3e" class="caaUJ3e">title</span> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label60 caaUJ3e" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caaUJ3e"> 
+                <label class="text-warning x-label caaUJ3e" xid="label3" style="width:80%;font-size:medium;" __cid="caaUJ3e">快速通过：</label>  
+                <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle pull-right  x-edit caaUJ3e" type="checkbox" name="checkbox_listen" ON="开启" OFF="关闭" checkedValue="1" checked="true" xid="toggle_listen" uncheckedValue="0" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;关闭&quot;,&quot;on&quot;:&quot;开启&quot;},&quot;name&quot;:&quot;checkbox_listen&quot;,&quot;uncheckedValue&quot;:&quot;0&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" data-events="onChange:toggle_listenChange" __cid="caaUJ3e"> 
+                  <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" name="checkbox_listen" __cid="caaUJ3e" class="caaUJ3e"></input>  
+                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="开启" data-off="关闭" __cid="caaUJ3e" class="caaUJ3e">  
+                    <span __cid="caaUJ3e" class="caaUJ3e"/> 
+                  </label> 
+                </span> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label60 caaUJ3e" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caaUJ3e"> 
+                <label class="text-warning x-label caaUJ3e" xid="label1" style="width:80%;font-size:medium;" __cid="caaUJ3e">禁止熄屏：</label>  
+                <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle pull-right  x-edit caaUJ3e" type="checkbox" name="checkbox_listen" ON="开启" OFF="关闭" checkedValue="1" checked="false" xid="toggle_screen" uncheckedValue="0" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;关闭&quot;,&quot;on&quot;:&quot;开启&quot;},&quot;name&quot;:&quot;checkbox_listen&quot;,&quot;uncheckedValue&quot;:&quot;0&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" data-events="onChange:toggle_screenChange" __cid="caaUJ3e"> 
+                  <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" name="checkbox_listen" __cid="caaUJ3e" class="caaUJ3e"></input>  
+                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="开启" data-off="关闭" __cid="caaUJ3e" class="caaUJ3e">  
+                    <span __cid="caaUJ3e" class="caaUJ3e"/> 
+                  </label> 
+                </span> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label60 caaUJ3e" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="caaUJ3e"> 
+                <label class="text-warning x-label caaUJ3e" xid="label2" style="width:80%;font-size:medium;" __cid="caaUJ3e">清除缓存：</label>  
+                <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle pull-right  x-edit caaUJ3e" type="checkbox" name="checkbox_cache" ON="清除" OFF="清除" checkedValue="1" checked="false" xid="toggle_cache" uncheckedValue="0" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;清除&quot;,&quot;on&quot;:&quot;清除&quot;},&quot;name&quot;:&quot;checkbox_cache&quot;,&quot;uncheckedValue&quot;:&quot;0&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" data-events="onChange:toggle_cacheChange" __cid="caaUJ3e"> 
+                  <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" name="checkbox_cache" __cid="caaUJ3e" class="caaUJ3e"></input>  
+                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="清除" data-off="清除" __cid="caaUJ3e" class="caaUJ3e">  
+                    <span __cid="caaUJ3e" class="caaUJ3e"/> 
+                  </label> 
+                </span> 
+              </div> 
+            </div>  
+            <ul class="list-group caaUJ3e" xid="ul1" __cid="caaUJ3e"> 
+              <li class="list-group-item caaUJ3e" xid="li2" __cid="caaUJ3e" data-bind="event:{click:$model._callModelFn.bind($model, 'li_exitClick')}"> 
+                <div xid="div1" align="center" __cid="caaUJ3e" class="caaUJ3e"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btnImg caaUJ3e" xid="button4" style="background-color: #FF0000" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-log-out&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="caaUJ3e"> 
+                    <i xid="i13" class="icon-log-out caaUJ3e" __cid="caaUJ3e"/>  
+                    <span xid="span16" __cid="caaUJ3e" class="caaUJ3e"/> 
+                  </a>  
+                  <span xid="span15" __cid="caaUJ3e" class="caaUJ3e">退出当前账号</span> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="caaUJ3e" class="caaUJ3e">.x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p33f58a6473a14cc89e5bf409898c0363-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" id="aler" xid="div_aler" __cid="caaUJ3e" class="caaUJ3e"/> 
+</div>

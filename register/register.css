@@ -1,0 +1,50 @@
+/*顶部titlebar**********************************************/
+.x-titlebar {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+.interval {
+	height: 10px;
+	background-color: #eee;
+}
+/*阴影效果*/
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-left {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-right {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	
+}
+
+
+.x-titlebar .btn {
+	/*padding: 0;
+	margin: 0;*/
+}
+
+.x-titlebar .btn>span {
+	font-size: 10px;
+	line-height: 1;
+}
+
+.font-gray {
+	color: gray
+}
+
+.font-bold {
+	font-weight: bold
+}
+.form-vertical {
+	margin: 20px;
+	
+}

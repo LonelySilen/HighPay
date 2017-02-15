@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuMbAJf" class="cuMbAJf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-link.cuMbAJf{background-color: rgb(53, 197, 228); color: rgb(255, 255, 255); font-size: 16px} .btn-link.cuMbAJf:active{background-color: rgb(53, 197, 212); color: rgb(234, 234, 234)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cuMbAJf" class="cuMbAJf"></div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="msgDlg_login" style="left:9px;top:351px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cuMbAJf" class="cuMbAJf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cuMbAJf" __cid="cuMbAJf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cuMbAJf" __cid="cuMbAJf">
+      <xhtml:div class="x-modal-inner cuMbAJf" __cid="cuMbAJf">
+        <xhtml:div class="x-modal-title cuMbAJf" __cid="cuMbAJf"></xhtml:div>
+        <xhtml:div class="x-modal-text cuMbAJf" __cid="cuMbAJf"></xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cuMbAJf" type="text" __cid="cuMbAJf"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cuMbAJf" __cid="cuMbAJf">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cuMbAJf" value="ok" __cid="cuMbAJf">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cuMbAJf" value="yes" __cid="cuMbAJf">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cuMbAJf" value="no" __cid="cuMbAJf">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cuMbAJf" value="cancel" __cid="cuMbAJf">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="winDlg_reg" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cuMbAJf" class="cuMbAJf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cuMbAJf" __cid="cuMbAJf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cuMbAJf" style="display:none;" __cid="cuMbAJf">
+      <xhtml:div class="x-dialog-title cuMbAJf" __cid="cuMbAJf">
+        <xhtml:button class="close cuMbAJf" __cid="cuMbAJf">
+          <xhtml:span __cid="cuMbAJf" class="cuMbAJf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cuMbAJf" __cid="cuMbAJf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cuMbAJf" __cid="cuMbAJf"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cuMbAJf" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:false,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="cuMbAJf"> 
+    <div class="x-contents-content active cuMbAJf" xid="content" style="background-image: url($model/UI2/weixin/img/loginbg4.jpg);" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:contentActive" __cid="cuMbAJf"> 
+      <div xid="div_avatar" style="margin:10px 50px 0px 50px;" align="center" __cid="cuMbAJf" class="cuMbAJf"> 
+        <img src="$model/UI2/weixin/res/img/vim.png" alt="" xid="image_avatar" height="150" __cid="cuMbAJf" class="cuMbAJf"/>  
+        <p xid="p1" __cid="cuMbAJf" class="cuMbAJf"/> 
+      </div>
+      <div class="form-vertical cuMbAJf" component="$model/UI2/system/components/bootstrap/form/form" xid="form" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cuMbAJf"> 
+        <div xid="div_account" class="form-group cuMbAJf" style="margin-right:auto;margin-left:auto;width:95%;" __cid="cuMbAJf"> 
+          <label xid="label_account" class="sr-only cuMbAJf" __cid="cuMbAJf">用户名</label>  
+          <div xid="div_acct" class="input-group cuMbAJf" __cid="cuMbAJf"> 
+            <div xid="div_icon_acct" class="input-group-addon cuMbAJf" __cid="cuMbAJf"> 
+              <span class="glyphicon glyphicon-user cuMbAJf" __cid="cuMbAJf"/> 
+            </div>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cuMbAJf" xid="userId" data-bind="component:{ref:userData.ref('userId'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入账号/手机号&quot;}" __cid="cuMbAJf"/> 
+          </div> 
+        </div>  
+        <div xid="div_password" class="form-group cuMbAJf" style="margin-right:auto;margin-left:auto;width:95%;" __cid="cuMbAJf"> 
+          <label xid="label_pass" class="sr-only cuMbAJf" __cid="cuMbAJf">密码</label>  
+          <div xid="div_pass" class="input-group cuMbAJf" __cid="cuMbAJf"> 
+            <div xid="div_icon_pass" class="input-group-addon cuMbAJf" __cid="cuMbAJf"> 
+              <span class="glyphicon glyphicon-lock cuMbAJf" __cid="cuMbAJf"/> 
+            </div>  
+            <input component="$model/UI2/system/components/justep/input/password" class="form-control cuMbAJf" xid="password" type="password" data-bind="component:{ref:userData.ref('userpass'),name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入密码&quot;}" __cid="cuMbAJf"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cuMbAJf" xid="row_btn" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuMbAJf"> 
+        <div class="x-col cuMbAJf" xid="col10" style="text-align:center;" __cid="cuMbAJf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-danger btn-block cuMbAJf" xid="btn_login" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:userLogin" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;登录系统&quot;}" __cid="cuMbAJf"> 
+            <i xid="i_btn" __cid="cuMbAJf" class="cuMbAJf"/>  
+            <span xid="span_btn" __cid="cuMbAJf" class="cuMbAJf">登录系统</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div xid="div_others" align="right" __cid="cuMbAJf" class="cuMbAJf"> 
+        <a xid="register" style="margin-right:20px;text-align:center;" bind-click="registerClick" __cid="cuMbAJf" class="cuMbAJf">注册</a>  
+        <a xid="forget" style="margin-right:50px;text-align:center;" bind-click="forgetClick" __cid="cuMbAJf" class="cuMbAJf">忘记密码</a> 
+      </div>  
+      <div xid="div_info" style="margin:50px 20px 50px 20px;height:50px;text-align:center;" __cid="cuMbAJf" class="cuMbAJf"> 
+        <span xid="span_info" __cid="cuMbAJf" class="cuMbAJf">© 天津锐敏科技</span>  
+        <a href="tel:10086" __cid="cuMbAJf" class="cuMbAJf">联系我们</a> 
+      </div> 
+    </div> 
+  </div>  
+  <div id="aler" xid="div_aler" __cid="cuMbAJf" class="cuMbAJf"/>
+</div>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cIvI36j" component="$model/UI2/system/components/justep/window/window" design="device:m;resolution:360 x 640;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIvI36j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cIvI36j{background-color: rgb(255, 255, 255); color: rgb(130, 130, 130)} .interval.cIvI36j{height: 10px; background-color: rgb(238, 238, 238)} .x-titlebar.cIvI36j .x-titlebar-title.cIvI36j{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.cIvI36j .x-titlebar-left.cIvI36j{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.cIvI36j .x-titlebar-right.cIvI36j{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.cIvI36j .x-titlebar-title.cIvI36j{} .x-titlebar.cIvI36j .x-titlebar-title.cIvI36j .seach.cIvI36j{width: 80%; border-radius: 0px 0px 5px 5px; border: none; background: none; box-shadow: none; border-bottom: 1px solid rgb(255, 255, 255)} .x-titlebar.cIvI36j .x-titlebar-title.cIvI36j .seach-btn.cIvI36j{width: 20%; padding-top: 15px} .x-titlebar.cIvI36j .btn.cIvI36j{} .x-titlebar.cIvI36j .btn.cIvI36j &gt; span.cIvI36j{font-size: 10px; line-height: 1} .btnImg.cIvI36j{width: 25px; height: 25px; padding: 2px; border-radius: 30px; background-color: rgb(53, 197, 228); color: rgb(255, 255, 255)} .panel-heading.cIvI36j{height: 50px; font-size: 20px; padding-top: 25px} .list-group-item.cIvI36j:hover, .panel-heading.cIvI36j:hover{} .tip-bubble.cIvI36j{position: relative; background-color: rgb(32, 32, 32); width: 100px; padding: 0px; color: rgb(204, 204, 204); text-align: center; border-radius: 1px; margin: 1px; border: 1px solid rgb(17, 17, 17); box-shadow: 1px 1px 2px rgb(32, 32, 32); -moz-box-shadow: 1px 1px 2px rgb(32, 32, 32); -webkit-border-shadow: 1px 1px 2px rgb(32, 32, 32); text-shadow: 0px 0px 15px rgb(255, 255, 255)} .tip-bubble-top.cIvI36j:after{border-bottom-color: rgb(32, 32, 32); right: 5px; bottom: 100%} .btn-link.cIvI36j{background-color: rgb(255, 255, 255); color: rgb(130, 130, 130)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cIvI36j" class="cIvI36j"></div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="winRec" style="left:52px;top:13px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cIvI36j" class="cIvI36j"/>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="msg_dlg" style="left:89px;top:13px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cIvI36j" class="cIvI36j">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cIvI36j" __cid="cIvI36j"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cIvI36j" __cid="cIvI36j">
+      <xhtml:div class="x-modal-inner cIvI36j" __cid="cIvI36j">
+        <xhtml:div class="x-modal-title cIvI36j" __cid="cIvI36j"></xhtml:div>
+        <xhtml:div class="x-modal-text cIvI36j" __cid="cIvI36j"></xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cIvI36j" type="text" __cid="cIvI36j"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cIvI36j" __cid="cIvI36j">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cIvI36j" value="ok" __cid="cIvI36j">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cIvI36j" value="yes" __cid="cIvI36j">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cIvI36j" value="no" __cid="cIvI36j">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cIvI36j" value="cancel" __cid="cIvI36j">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p5d0151afe0524c3c8a00646932c86369-iosstatusbar cIvI36j" xid="mainPanel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIvI36j"> 
+    <div class="x-panel-top cIvI36j" xid="top" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIvI36j"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cIvI36j" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;注册信息&quot;}" __cid="cIvI36j"> 
+        <div class="x-titlebar-left cIvI36j" xid="div_title_left" __cid="cIvI36j"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cIvI36j" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cIvI36j"> 
+            <i class="icon-chevron-left cIvI36j" xid="i1" __cid="cIvI36j"/>  
+            <span xid="span12" __cid="cIvI36j" class="cIvI36j"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cIvI36j" xid="div_title_title" id="tops" __cid="cIvI36j">注册信息</div>  
+        <div class="x-titlebar-right  cIvI36j" xid="div_title_right" __cid="cIvI36j">
+          <div class="empty cIvI36j" __cid="cIvI36j"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cIvI36j" xid="infoContent" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIvI36j"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cIvI36j" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:false}" __cid="cIvI36j"> 
+        <div class="x-contents-content x-cards  x-scroll-view active cIvI36j" xid="infoCnt" onactive="infoCntActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:infoCntActive" __cid="cIvI36j"> 
+          <div class="x-scroll cIvI36j" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="info_scroll" noMoreLoadLabel="注册信息" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;pullDownLabel&quot;:&quot;注册信息&quot;,&quot;pullDownLoadingLabel&quot;:&quot;注册信息&quot;,&quot;pullDownMoveLabel&quot;:&quot;注册信息&quot;,&quot;pullUpLabel&quot;:&quot;注册信息&quot;,&quot;pullUpLoadingLabel&quot;:&quot;注册信息&quot;,&quot;pullUpMoveLabel&quot;:&quot;注册信息&quot;}" __cid="cIvI36j"> 
+            <div class="x-content-center x-pull-down cIvI36j" xid="div15" __cid="cIvI36j"> 
+              <span class="x-pull-down-label cIvI36j" xid="span2" __cid="cIvI36j">注册信息</span>
+            </div>  
+            <div class="x-scroll-content cIvI36j" xid="div2" __cid="cIvI36j"> 
+              <li class="list-group-item cIvI36j" xid="li8" __cid="cIvI36j">我的账号
+                <span class="pull-right text-muted cIvI36j" xid="span23" bind-text="($model.infoData.val(&quot;accountName&quot;)==null)?'未绑定': $model.infoData.val(&quot;accountName&quot;)" __cid="cIvI36j">未绑定</span>  
+                <i xid="i4" class="icon-person cIvI36j" style="color: #FF8000;" __cid="cIvI36j"/>
+              </li>  
+              <li class="list-group-item cIvI36j" xid="li9" __cid="cIvI36j">我的手机
+                <span class="pull-right text-muted cIvI36j" xid="span24" bind-text="($model.infoData.val(&quot;mobileNo&quot;)==null)?'未绑定':$model.infoData.val(&quot;mobileNo&quot;)" __cid="cIvI36j">未绑定</span>  
+                <i xid="i5" class="icon-iphone cIvI36j" style="color:#FF8080;" __cid="cIvI36j"/>
+              </li>  
+              <li class="list-group-item cIvI36j" xid="li15" __cid="cIvI36j">我的积分
+                <span class="pull-right text-muted cIvI36j" xid="span261" style="color:#FF8000;" __cid="cIvI36j">106</span>  
+                <i xid="i21" class="icon-android-star cIvI36j" style="color:#FF8000;" __cid="cIvI36j"/>
+              </li>  
+              <li class="list-group-item cIvI36j" xid="li11" __cid="cIvI36j">默认车号
+                <span class="pull-right text-muted cIvI36j" xid="span26" bind-text="($model.infoData.val(&quot;defCarNo&quot;)=='' || $model.infoData.val(&quot;defCarNo&quot;)=='null' || $model.infoData.val(&quot;defCarNo&quot;)=='undefined')?'未绑定':$model.infoData.val(&quot;defCarNo&quot;)" __cid="cIvI36j">未绑定</span>  
+                <i xid="i7" class="icon-ios7-keypad cIvI36j" style="color: #0080FF;" __cid="cIvI36j"/>
+              </li>  
+              <li class="list-group-item cIvI36j" xid="li10" __cid="cIvI36j">支付宝账户
+                <span class="pull-right text-muted cIvI36j" xid="span25" bind-text="($model.infoData.val(&quot;paymentAccount&quot;)=='' || $model.infoData.val(&quot;paymentAccount&quot;)=='null' || $model.infoData.val(&quot;paymentAccount&quot;)=='undefined')?'未绑定':$model.infoData.val(&quot;paymentAccount&quot;)" __cid="cIvI36j">未绑定</span>  
+                <i xid="i6" class="icon-ios7-box-outline cIvI36j" style="color:#008080;" __cid="cIvI36j"/>
+              </li>  
+              <li class="list-group-item cIvI36j" xid="li12" __cid="cIvI36j">驾驶员姓名
+                <span class="pull-right text-muted cIvI36j" xid="span27" bind-text="($model.infoData.val(&quot;driverName&quot;)=='' || $model.infoData.val(&quot;driverName&quot;)=='null' || $model.infoData.val(&quot;driverName&quot;)=='undefined')?'未添加':$model.infoData.val(&quot;driverName&quot;)" __cid="cIvI36j">未添加</span>  
+                <i xid="i8" class="icon-leaf cIvI36j" style="color:#228B22;" __cid="cIvI36j"/>
+              </li>  
+              <li class="list-group-item cIvI36j" xid="li13" __cid="cIvI36j">驾驶证号
+                <span class="pull-right text-muted cIvI36j" xid="span28" bind-text="( $model.infoData.val(&quot;driverNo&quot;)=='' || $model.infoData.val(&quot;driverNo&quot;)=='null' || $model.infoData.val(&quot;driverNo&quot;)=='undefined')?'未添加': $model.infoData.val(&quot;driverNo&quot;)" __cid="cIvI36j">未添加</span>  
+                <i xid="i9" class="icon-android-storage cIvI36j" style="color: #FF0000" __cid="cIvI36j"/>
+              </li>  
+              <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cIvI36j" xid="group1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;title&quot;}" __cid="cIvI36j"> 
+                <div xid="div24" class="text-center user cIvI36j" __cid="cIvI36j"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn x-green cIvI36j" xid="btn9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;修改密码&quot;,&quot;target&quot;:&quot;pwdCnt&quot;}" __cid="cIvI36j"> 
+                    <i xid="i10" __cid="cIvI36j" class="cIvI36j"/>  
+                    <span xid="span29" __cid="cIvI36j" class="cIvI36j">修改密码</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning cIvI36j" xid="btn10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;更新信息&quot;,&quot;target&quot;:&quot;updateCnt&quot;}" __cid="cIvI36j"> 
+                    <i xid="i11" __cid="cIvI36j" class="cIvI36j"/>  
+                    <span xid="span30" __cid="cIvI36j" class="cIvI36j">更新信息</span>
+                  </a> 
+                </div> 
+              </div>
+            </div>
+          </div> 
+        </div>  
+        <div class="x-contents-content x-cards  x-scroll-view cIvI36j" xid="updateCnt" onactive="updateCntActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:updateCntActive" __cid="cIvI36j"> 
+          <div class="x-scroll cIvI36j" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" noMoreLoadLabel="注册信息" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;pullDownLabel&quot;:&quot;注册信息&quot;,&quot;pullDownLoadingLabel&quot;:&quot;注册信息&quot;,&quot;pullDownMoveLabel&quot;:&quot;注册信息&quot;,&quot;pullUpLabel&quot;:&quot;注册信息&quot;,&quot;pullUpLoadingLabel&quot;:&quot;注册信息&quot;,&quot;pullUpMoveLabel&quot;:&quot;注册信息&quot;}" __cid="cIvI36j"> 
+            <div class="x-content-center x-pull-down cIvI36j" xid="div9" __cid="cIvI36j"> 
+              <span class="x-pull-down-label cIvI36j" xid="span22" __cid="cIvI36j">注册信息</span>
+            </div>  
+            <div class="x-scroll-content cIvI36j" xid="div11" __cid="cIvI36j"> 
+              <div class="form-vertical cIvI36j" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cIvI36j"> 
+                <div xid="div18" class="form-group cIvI36j" style="margin-right:auto;margin-left:auto;width:95%;" __cid="cIvI36j"> 
+                  <label xid="col6" class="sr-only cIvI36j" __cid="cIvI36j">用户名</label>  
+                  <div xid="col5" class="input-group cIvI36j" __cid="cIvI36j"> 
+                    <div xid="div4" class="input-group-addon cIvI36j" __cid="cIvI36j"> 
+                      <span xid="span4" __cid="cIvI36j" class="cIvI36j">昵 称 ：</span>
+                      <span xid="span8" class="glyphicon glyphicon-user cIvI36j" __cid="cIvI36j"/> 
+                    </div>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control cIvI36j" xid="input3" data-bind="component:{ref:infoData.ref('accountName'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入账号&quot;}" __cid="cIvI36j"/> 
+                  </div> 
+                </div>  
+                <div xid="div19" class="form-group cIvI36j" style="margin-right:auto;margin-left:auto;width:95%;top:10px;" __cid="cIvI36j"> 
+                  <label xid="col4" class="sr-only cIvI36j" __cid="cIvI36j">用户名</label>  
+                  <div xid="col3" class="input-group cIvI36j" __cid="cIvI36j"> 
+                    <div xid="div3" class="input-group-addon cIvI36j" __cid="cIvI36j"> 
+                      <span xid="span6" __cid="cIvI36j" class="cIvI36j">手 机 ：</span>
+                      <span class="glyphicon glyphicon-phone cIvI36j" xid="span7" __cid="cIvI36j"/> 
+                    </div>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control cIvI36j" xid="input2" data-bind="component:{ref:infoData.ref('mobileNo'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入手机号&quot;}" __cid="cIvI36j"/> 
+                  </div> 
+                </div>  
+                <div xid="div20" class="form-group cIvI36j" style="margin-right:auto;margin-left:auto;width:95%;top:10px;" __cid="cIvI36j"> 
+                  <label xid="col7" class="sr-only cIvI36j" __cid="cIvI36j">用户名</label>  
+                  <div xid="col8" class="input-group cIvI36j" __cid="cIvI36j"> 
+                    <div xid="div5" class="input-group-addon cIvI36j" __cid="cIvI36j"> 
+                      <span xid="span10" __cid="cIvI36j" class="cIvI36j">支付宝：</span>
+                      <span class="glyphicon glyphicon-credit-card cIvI36j" xid="span1" __cid="cIvI36j"/> 
+                    </div>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control cIvI36j" xid="input4" data-bind="component:{ref:infoData.ref('paymentAccount'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入支付宝账号&quot;}" __cid="cIvI36j"/> 
+                  </div> 
+                </div>  
+                <div xid="div22" class="form-group cIvI36j" style="margin-right:auto;margin-left:auto;width:95%;top:10px;" __cid="cIvI36j"> 
+                  <label xid="col13" class="sr-only cIvI36j" __cid="cIvI36j">用户名</label>  
+                  <div xid="col12" class="input-group cIvI36j" __cid="cIvI36j"> 
+                    <div xid="div17" class="input-group-addon cIvI36j" __cid="cIvI36j"> 
+                      <span xid="span13" __cid="cIvI36j" class="cIvI36j">驾驶员：</span>
+                      <span class="glyphicon glyphicon-edit cIvI36j" xid="span3" __cid="cIvI36j"/> 
+                    </div>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control cIvI36j" xid="input6" data-bind="component:{ref:infoData.ref('driverName'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入驾驶员姓名&quot;}" __cid="cIvI36j"/> 
+                  </div> 
+                </div>  
+                <div xid="div23" class="form-group cIvI36j" style="margin-right:auto;margin-left:auto;width:95%;top:10px;" __cid="cIvI36j"> 
+                  <label xid="col15" class="sr-only cIvI36j" __cid="cIvI36j">用户名</label>  
+                  <div xid="col14" class="input-group cIvI36j" __cid="cIvI36j"> 
+                    <div xid="div16" class="input-group-addon cIvI36j" __cid="cIvI36j"> 
+                      <span xid="span14" __cid="cIvI36j" class="cIvI36j">驾驶证：</span>
+                      <span class="glyphicon glyphicon-list-alt cIvI36j" xid="span9" __cid="cIvI36j"/> 
+                    </div>  
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control cIvI36j" xid="input7" data-bind="component:{ref:infoData.ref('driverNo'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入驾驶证号&quot;}" __cid="cIvI36j"/> 
+                  </div> 
+                </div> 
+              </div>
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cIvI36j" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIvI36j"> 
+                <div class="x-col cIvI36j" xid="col10" style="text-align:center;" __cid="cIvI36j"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-danger btn-block cIvI36j" xid="btn13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_update" data-config="{&quot;label&quot;:&quot;更新&quot;}" __cid="cIvI36j"> 
+                    <i xid="i3" __cid="cIvI36j" class="cIvI36j"/>  
+                    <span xid="span5" __cid="cIvI36j" class="cIvI36j">更新</span> 
+                  </a> 
+                </div> 
+              </div>
+            </div> 
+          </div>
+        </div>  
+        <div class="x-contents-content x-cards x-scroll-view cIvI36j" xid="pwdCnt" onactive="pwdCntActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:pwdCntActive" __cid="cIvI36j"> 
+          <div class="x-scroll cIvI36j" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" noMoreLoadLabel="注册信息" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;pullDownLabel&quot;:&quot;注册信息&quot;,&quot;pullDownLoadingLabel&quot;:&quot;注册信息&quot;,&quot;pullDownMoveLabel&quot;:&quot;注册信息&quot;,&quot;pullUpLabel&quot;:&quot;注册信息&quot;,&quot;pullUpLoadingLabel&quot;:&quot;注册信息&quot;,&quot;pullUpMoveLabel&quot;:&quot;注册信息&quot;}" __cid="cIvI36j"> 
+            <div class="x-content-center x-pull-down cIvI36j" xid="div31" __cid="cIvI36j"> 
+              <span class="x-pull-down-label cIvI36j" xid="span37" __cid="cIvI36j">注册信息</span>
+            </div>  
+            <div class="x-scroll-content cIvI36j" xid="div12" __cid="cIvI36j"> 
+              <div class="form-vertical cIvI36j" component="$model/UI2/system/components/bootstrap/form/form" xid="form" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cIvI36j"> 
+                <div xid="div25" class="form-group cIvI36j" style="margin-right:auto;margin-left:auto;width:95%;" __cid="cIvI36j"> 
+                  <label xid="label1" class="sr-only cIvI36j" __cid="cIvI36j">用户名</label>  
+                  <div xid="div26" class="input-group cIvI36j" __cid="cIvI36j"> 
+                    <div xid="div27" class="input-group-addon cIvI36j" __cid="cIvI36j"> 
+                      <span class="glyphicon glyphicon-pencil cIvI36j" xid="span31" __cid="cIvI36j"/> 
+                    </div>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control cIvI36j" xid="oldPwd" type="password" data-bind="component:{ref:pwdData.ref('oldPwd'),name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入原密码&quot;}" __cid="cIvI36j"/> 
+                  </div> 
+                </div>  
+                <div xid="div28" class="form-group cIvI36j" style="margin-right:auto;margin-left:auto;width:95%;" __cid="cIvI36j"> 
+                  <label xid="label2" class="sr-only cIvI36j" __cid="cIvI36j">密码</label>  
+                  <div xid="div29" class="input-group cIvI36j" __cid="cIvI36j"> 
+                    <div xid="div30" class="input-group-addon cIvI36j" __cid="cIvI36j"> 
+                      <span class="glyphicon glyphicon-edit cIvI36j" xid="span32" __cid="cIvI36j"/> 
+                    </div>  
+                    <input component="$model/UI2/system/components/justep/input/password" class="form-control cIvI36j" xid="newPwd" type="password" data-bind="component:{ref:pwdData.ref('newPwd'),name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入新的密码&quot;}" __cid="cIvI36j"/> 
+                  </div> 
+                </div> 
+              </div>
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cIvI36j" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIvI36j"> 
+                <div class="x-col cIvI36j" xid="col1" style="text-align:center;" __cid="cIvI36j"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-danger btn-block cIvI36j" xid="btn12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_alterClick" data-config="{&quot;label&quot;:&quot;修改密码&quot;}" __cid="cIvI36j"> 
+                    <i xid="i12" __cid="cIvI36j" class="cIvI36j"/>  
+                    <span xid="span33" __cid="cIvI36j" class="cIvI36j">修改密码</span> 
+                  </a> 
+                </div> 
+              </div>
+            </div> 
+          </div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cIvI36j" xid="bottom" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:0}" __cid="cIvI36j"/>
+    <style __cid="cIvI36j" class="cIvI36j">.x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: 0px;}.x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-bottom {height: 0px;}.iosstatusbar .x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p5d0151afe0524c3c8a00646932c86369-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div id="aler" xid="div_aler" __cid="cIvI36j" class="cIvI36j"/>
+</div>

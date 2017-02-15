@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 ceyemii" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceyemii" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/button/button,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.ceyemii{background-color: rgb(255, 255, 255); color: rgb(130, 130, 130)} .interval.ceyemii{height: 10px; background-color: rgb(238, 238, 238)} .x-titlebar.ceyemii .x-titlebar-title.ceyemii{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.ceyemii .x-titlebar-left.ceyemii{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.ceyemii .x-titlebar-right.ceyemii{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.ceyemii .x-titlebar-title.ceyemii{} .x-titlebar.ceyemii .btn.ceyemii{} .x-titlebar.ceyemii .btn.ceyemii &gt; span.ceyemii{font-size: 10px; line-height: 1} .img5.ceyemii{width: 48px; height: 48px} .text-muted.ceyemii{padding: 5px} .x-swipe-area.ceyemii{right: 0; text-align: center; padding-top: 40px; font-size: 1.5em; background: red; color: white; width: 100px; position: absolute; top: 0; height: 100%; transform: translate3d(100%, 0, 0); -webkit-transform: translate3d(100%, 0, 0)} .btn-link.ceyemii{background-color: rgb(255, 255, 255); color: rgb(130, 130, 130)} .image-wall.ceyemii{width: 100%; height: 100%}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="ceyemii" class="ceyemii"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="win_dlg" style="left:61px;top:9px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="ceyemii" class="ceyemii"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay ceyemii" __cid="ceyemii"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog ceyemii" style="display:none;" __cid="ceyemii">  
+      <div class="x-dialog-title ceyemii" __cid="ceyemii"> 
+        <button class="close ceyemii" __cid="ceyemii"> 
+          <span __cid="ceyemii" class="ceyemii">×</span> 
+        </button>  
+        <div class="x-dialog-title-text ceyemii" __cid="ceyemii"/> 
+      </div>  
+      <div class="x-dialog-body ceyemii" __cid="ceyemii"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="winRec" style="left:37px;top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="ceyemii" class="ceyemii"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="msg_dlg" style="left:106px;top:13px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="ceyemii" class="ceyemii"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay ceyemii" __cid="ceyemii"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal ceyemii" __cid="ceyemii">  
+      <div class="x-modal-inner ceyemii" __cid="ceyemii"> 
+        <div class="x-modal-title ceyemii" __cid="ceyemii"/>  
+        <div class="x-modal-text ceyemii" __cid="ceyemii"/>  
+        <input class="x-modal-prompt-input ceyemii" type="text" __cid="ceyemii"/> 
+      </div>  
+      <div class="x-modal-buttons ceyemii" __cid="ceyemii"> 
+        <a class="x-modal-button x-modal-button-bold OK ceyemii" value="ok" __cid="ceyemii">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes ceyemii" value="yes" __cid="ceyemii">是</a>  
+        <a class="x-modal-button x-modal-button-bold No ceyemii" value="no" __cid="ceyemii">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel ceyemii" value="cancel" __cid="ceyemii">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar ceyemii" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceyemii"> 
+    <div class="x-panel-top ceyemii" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceyemii"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ceyemii" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;关于&quot;}" __cid="ceyemii"> 
+        <div class="x-titlebar-left ceyemii" xid="div_title_left" __cid="ceyemii"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ceyemii" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ceyemii"> 
+            <i class="icon-chevron-left ceyemii" xid="i1" __cid="ceyemii"/>  
+            <span xid="span12" __cid="ceyemii" class="ceyemii"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ceyemii" xid="div_title_title" __cid="ceyemii">关于</div>  
+        <div class="x-titlebar-right  ceyemii" xid="div_title_right" __cid="ceyemii"> 
+          <div class="empty ceyemii" __cid="ceyemii"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ceyemii" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceyemii"> 
+      <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel ceyemii" xid="carousel" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" data-config="{&quot;auto&quot;:false}" __cid="ceyemii"> 
+        <ol class="carousel-indicators ceyemii" xid="ol2" __cid="ceyemii"/>  
+        <div class="x-contents carousel-inner ceyemii" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contents2" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:false}" __cid="ceyemii"> 
+          <div class="x-contents-content active ceyemii" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ceyemii"> 
+            <img src="@justepContextPath@/v_bba1363ae1f7405e90091d124db50e4el_zh_CNs_d_m/weixin/intro/img/01.png" class="image-wall ceyemii" xid="image1" height="100%" style="width:100%;" __cid="ceyemii"/> 
+          </div>  
+          <div class="x-contents-content ceyemii" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ceyemii"> 
+            <img src="@justepContextPath@/v_cc0aa1b0e228486eb1c8af93aff3fc19l_zh_CNs_d_m/weixin/intro/img/02.png" class="image-wall ceyemii" xid="image2" __cid="ceyemii"/> 
+          </div>  
+          <div class="x-contents-content ceyemii" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ceyemii"> 
+            <img src="@justepContextPath@/v_9150eb3f053a43bba44b3e86f52a1269l_zh_CNs_d_m/weixin/intro/img/03.png" class="image-wall ceyemii" xid="image3" __cid="ceyemii"/> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ceyemii" class="ceyemii">.x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfae9b64ed314d7cb0f4f963ad95f0e9-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" id="aler" xid="div_aler" __cid="ceyemii" class="ceyemii"/> 
+</div>

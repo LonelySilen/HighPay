@@ -1,0 +1,70 @@
+/*顶部titlebar**********************************************/
+.x-titlebar {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+.interval {
+	height: 10px;
+	background-color: #eee;
+}
+/*阴影效果*/
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-left {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-right {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	
+}
+
+.x-titlebar .btn {
+	/*padding: 0;
+	margin: 0;*/
+}
+
+.x-titlebar .btn>span {
+	
+	line-height: 1;
+}
+
+.btn-link {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+/* .btn-link:active {
+	background-color: #35c5d4;
+	color: #EAEAEA;
+} */
+/******************************************************/
+
+.text-white{ color:#fff;}
+.text-black{ color:#212121;}
+
+
+.panel.panel-default{ margin-bottom:10px;}
+.panel-heading{ border-color:#dfdfdf;}
+.row{ margin:0;}
+.btn i{ font-size:20px;}
+
+.tb-noborder{ border:0;}
+
+.tb-img-shop{ width:20px; height:20px;}
+.tb-img-good{ width:120px; height:110px;}
+
+/*底部结算**/
+.x-panel-bottom .h4{ margin:5px 0; padding-right:10px; line-height:48px;}
+.tb-settlement{ background-color:#fd5001; color:#fff; font-size:16px;}
+
+/*配送方式*/
+.x-popOver-overlay{ background-color:#000;}
+.x-popOver-content{ width:300px; background-color:#fff;}

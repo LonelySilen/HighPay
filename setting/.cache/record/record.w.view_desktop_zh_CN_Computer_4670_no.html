@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cMFFVjq" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMFFVjq" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/button/button,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cMFFVjq{background-color: rgb(53, 197, 228); color: rgb(255, 255, 255)} .img5.cMFFVjq{width: 48px; height: 48px} .text-muted.cMFFVjq{padding: 5px} .x-swipe-area.cMFFVjq{right: 0; text-align: center; padding-top: 40px; font-size: 1.5em; background: red; color: white; width: 100px; position: absolute; top: 0; height: 100%; transform: translate3d(100%, 0, 0); -webkit-transform: translate3d(100%, 0, 0)} .btn-link.cMFFVjq{background-color: rgb(53, 197, 228); color: rgb(255, 255, 255)} .btn-link.cMFFVjq:active{background-color: rgb(53, 197, 212); color: rgb(234, 234, 234)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cMFFVjq" class="cMFFVjq"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="win_dlg" style="left:61px;top:9px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cMFFVjq" class="cMFFVjq"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cMFFVjq" __cid="cMFFVjq"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cMFFVjq" style="display:none;" __cid="cMFFVjq">  
+      <div class="x-dialog-title cMFFVjq" __cid="cMFFVjq"> 
+        <button class="close cMFFVjq" __cid="cMFFVjq"> 
+          <span __cid="cMFFVjq" class="cMFFVjq">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cMFFVjq" __cid="cMFFVjq"/> 
+      </div>  
+      <div class="x-dialog-body cMFFVjq" __cid="cMFFVjq"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="winRec" style="left:37px;top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cMFFVjq" class="cMFFVjq"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="msg_dlg" style="left:90px;top:7px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cMFFVjq" class="cMFFVjq"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cMFFVjq" __cid="cMFFVjq"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cMFFVjq" __cid="cMFFVjq">  
+      <div class="x-modal-inner cMFFVjq" __cid="cMFFVjq"> 
+        <div class="x-modal-title cMFFVjq" __cid="cMFFVjq"/>  
+        <div class="x-modal-text cMFFVjq" __cid="cMFFVjq"/>  
+        <input class="x-modal-prompt-input cMFFVjq" type="text" __cid="cMFFVjq"/> 
+      </div>  
+      <div class="x-modal-buttons cMFFVjq" __cid="cMFFVjq"> 
+        <a class="x-modal-button x-modal-button-bold OK cMFFVjq" value="ok" __cid="cMFFVjq">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cMFFVjq" value="yes" __cid="cMFFVjq">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cMFFVjq" value="no" __cid="cMFFVjq">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cMFFVjq" value="cancel" __cid="cMFFVjq">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p9f699b55199647a29e645227e9d0bd6b-iosstatusbar cMFFVjq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMFFVjq"> 
+    <div class="x-panel-top cMFFVjq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFFVjq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cMFFVjq" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;通行记录&quot;}" __cid="cMFFVjq"> 
+        <div class="x-titlebar-left cMFFVjq" xid="div_title_left" __cid="cMFFVjq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cMFFVjq" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cMFFVjq"> 
+            <i class="icon-chevron-left cMFFVjq" xid="i1" __cid="cMFFVjq"/>  
+            <span xid="span12" __cid="cMFFVjq" class="cMFFVjq"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cMFFVjq" xid="div_title_title" __cid="cMFFVjq">通行记录</div>  
+        <div class="x-titlebar-right  cMFFVjq" xid="div_title_right" __cid="cMFFVjq"> 
+          <div class="empty cMFFVjq" __cid="cMFFVjq"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cMFFVjq" xid="btn_clear" style="width:38px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_clearClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-trash-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cMFFVjq"> 
+            <i xid="i6" class="icon-ios7-trash-outline cMFFVjq" __cid="cMFFVjq"/>  
+            <span xid="span2" __cid="cMFFVjq" class="cMFFVjq"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cMFFVjq" xid="plateContent" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMFFVjq"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cMFFVjq" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:false}" __cid="cMFFVjq"> 
+        <div class="x-contents-content x-cards  x-scroll-view active cMFFVjq" xid="listCnt" onactive="listCntActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cMFFVjq"> 
+          <div class="x-scroll cMFFVjq" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cMFFVjq"> 
+            <div class="x-content-center x-pull-down container cMFFVjq" xid="div1" __cid="cMFFVjq"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cMFFVjq" xid="i2" __cid="cMFFVjq"/>  
+              <span class="x-pull-down-label cMFFVjq" xid="span1" __cid="cMFFVjq">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cMFFVjq" xid="div6" __cid="cMFFVjq"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cMFFVjq" xid="list_plate" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;recordData&quot;}" __cid="cMFFVjq"> 
+                <ul class="x-list-template hide cMFFVjq" xid="listTemplateUl2" __cid="cMFFVjq" data-bind="foreach:{data:$model.foreach_list_plate($element),afterRender:$model.foreach_afterRender_list_plate.bind($model,$element)}"> 
+                  <li xid="li_plate" class="list-group-item x-flex cMFFVjq" __cid="cMFFVjq"> 
+                    <div class="x-flex1 cMFFVjq" xid="div_info" __cid="cMFFVjq"> 
+                      <div class="text-muted cMFFVjq" xid="div5" __cid="cMFFVjq"> 
+                        <span xid="span8" class="text-primary cMFFVjq" __cid="cMFFVjq">付款人：</span>  
+                        <span xid="span9" class="text-danger cMFFVjq" __cid="cMFFVjq">张三</span>  
+                        <span xid="span15" class="pull-right text-danger cMFFVjq" __cid="cMFFVjq" data-bind="text:ref('ExitLicenseNo')">No123456</span>  
+                        <span xid="span16" class="pull-right text-primary cMFFVjq" __cid="cMFFVjq">车牌：</span> 
+                      </div>  
+                      <div class="text-muted cMFFVjq" xid="div2" __cid="cMFFVjq"> 
+                        <span xid="span32" class="pull-left text-primary cMFFVjq" __cid="cMFFVjq">金额(￥)：</span>  
+                        <span xid="span21" class="text-danger cMFFVjq" __cid="cMFFVjq" data-bind="text:$object.val(&quot;Money&quot;)">56</span>  
+                        <span xid="span5" class="pull-right text-danger cMFFVjq" __cid="cMFFVjq" data-bind="text:ref('VehicleModel')">家庭轿车</span>  
+                        <span xid="span3" class="pull-right text-primary cMFFVjq" __cid="cMFFVjq">车型：</span> 
+                      </div>  
+                      <div class="text-muted cMFFVjq" xid="div4" __cid="cMFFVjq"> 
+                        <span xid="span6" class="text-primary cMFFVjq" __cid="cMFFVjq">支付路段：</span>  
+                        <span xid="span7" class="pull-right text-danger cMFFVjq" __cid="cMFFVjq">天津市京津高速北塘站</span> 
+                      </div>  
+                      <div class="text-muted cMFFVjq" xid="div3" __cid="cMFFVjq"> 
+                        <span xid="span11" class="pull-left text-primary cMFFVjq" __cid="cMFFVjq">入站口：</span>  
+                        <span xid="span14" class="text-danger cMFFVjq" __cid="cMFFVjq" data-bind="text:ref('EnterTollGateName')">入口名</span>  
+                        <span xid="span10" class="pull-right text-danger cMFFVjq" __cid="cMFFVjq" data-bind="text:ref('ExitTollGateName')">入口名</span>  
+                        <span xid="span13" class="pull-right text-primary cMFFVjq" __cid="cMFFVjq">出站口：</span> 
+                      </div> 
+                    </div>  
+                    <div class="x-swipe-area cMFFVjq" xid="div_del" __cid="cMFFVjq" data-bind="event:{click:$model._callModelFn.bind($model, 'div_delClick')}">删除</div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cMFFVjq" xid="div7" __cid="cMFFVjq"> 
+              <span class="x-pull-up-label cMFFVjq" xid="span4" __cid="cMFFVjq">加载更多...</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cMFFVjq" class="cMFFVjq">.x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p9f699b55199647a29e645227e9d0bd6b-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

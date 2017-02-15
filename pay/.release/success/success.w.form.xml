@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cF36bEn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cF36bEn" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/button,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cF36bEn{background-color: rgb(255, 255, 255); color: rgb(130, 130, 130)} .interval.cF36bEn{height: 10px; background-color: rgb(238, 238, 238)} .x-titlebar.cF36bEn .x-titlebar-title.cF36bEn{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.cF36bEn .x-titlebar-left.cF36bEn{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.cF36bEn .x-titlebar-right.cF36bEn{border-bottom: 1px solid rgb(204, 204, 204)} .x-titlebar.cF36bEn .x-titlebar-title.cF36bEn{} .x-titlebar.cF36bEn .btn.cF36bEn{} .x-titlebar.cF36bEn .btn.cF36bEn &gt; span.cF36bEn{line-height: 1} .img5.cF36bEn{width: 48px; height: 48px} .text-muted.cF36bEn{padding: 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cF36bEn" class="cF36bEn"/>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="winRec" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cF36bEn" class="cF36bEn"/>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card pc8df0106523e4197b0e30626a31ab425-iosstatusbar cF36bEn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cF36bEn"> 
+    <div class="x-panel-top cF36bEn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cF36bEn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cF36bEn" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cF36bEn"> 
+        <div class="x-titlebar-left cF36bEn" xid="div19" __cid="cF36bEn"/>  
+        <div class="x-titlebar-title cF36bEn" xid="div20" __cid="cF36bEn"/>  
+        <div class="x-titlebar-right  cF36bEn" xid="div21" __cid="cF36bEn">
+          <div class="empty cF36bEn" __cid="cF36bEn"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-right cF36bEn" xid="btn_return" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_returnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;完成&quot;}" __cid="cF36bEn"> 
+            <i xid="i1" class="icon-chevron-right cF36bEn" __cid="cF36bEn"/>  
+            <span xid="span1" __cid="cF36bEn" class="cF36bEn">完成</span>
+          </a>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cF36bEn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cF36bEn"> 
+      <div class="bg-success panel-body media cF36bEn" __cid="cF36bEn">
+        <div class="media-left media-middle cF36bEn" xid="div5" __cid="cF36bEn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cF36bEn" xid="btn_mark" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cF36bEn"> 
+            <i xid="i3" class="icon-android-checkmark  text-success cF36bEn" __cid="cF36bEn"/>  
+            <span xid="span7" __cid="cF36bEn" class="cF36bEn"/>
+          </a> 
+        </div>
+        <div class="media-body cF36bEn" xid="div7" __cid="cF36bEn"> 
+          <h4 class="text-success cF36bEn" xid="h41" __cid="cF36bEn">支付成功</h4>  
+          <h5 class="text-muted cF36bEn" xid="h51" __cid="cF36bEn">支付路段：天津市南开区华苑产业园梓苑路68号C座601室</h5>  
+          <h5 class="text-warning cF36bEn" xid="h52" __cid="cF36bEn">（请注意抬杆）</h5>
+        </div>
+      </div>
+    </div>  
+    <style __cid="cF36bEn" class="cF36bEn">.x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc8df0106523e4197b0e30626a31ab425-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

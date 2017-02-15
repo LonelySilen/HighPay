@@ -1,0 +1,10 @@
+.btn-link2 {
+	background-color: #35c5e4;
+	color: #FFFFFF;
+	font-size : 21px;
+}
+
+.btn-link2:active {
+	background-color: #00ffff;
+	color: #EAEAEA;
+}

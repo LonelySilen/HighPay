@@ -1,0 +1,56 @@
+/*顶部titlebar**********************************************/
+.x-titlebar {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+.interval {
+	height: 10px;
+	background-color: #eee;
+}
+/*阴影效果*/
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-left {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-right {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	
+}
+
+.x-titlebar .btn {
+	/*padding: 0;
+	margin: 0;*/
+}
+
+.x-titlebar .btn>span {
+	font-size: 10px;
+	line-height: 1;
+}
+/******************************************************/
+
+..btn-link {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+/* .btn-link:active {
+	background-color: #35c5d4;
+	color: #EAEAEA;
+} */
+
+/*图标样式*/
+.btnImg {
+
+	border-radius: 30px;
+	/*background-color: #35c5e4; #2fa4e7*/
+	color: #fff;
+}

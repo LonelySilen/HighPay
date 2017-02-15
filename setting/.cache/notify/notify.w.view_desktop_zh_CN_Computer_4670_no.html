@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cVr6Fvm" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVr6Fvm" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/button/button,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cVr6Fvm{background-color: rgb(53, 197, 228); color: rgb(255, 255, 255)} .img5.cVr6Fvm{width: 48px; height: 48px} .text-muted.cVr6Fvm{padding: 5px} .x-swipe-area.cVr6Fvm{right: 0; text-align: center; padding-top: 40px; font-size: 1.5em; background: red; color: white; width: 100px; position: absolute; top: 0; height: 100%; transform: translate3d(100%, 0, 0); -webkit-transform: translate3d(100%, 0, 0)} .btn-link.cVr6Fvm{background-color: rgb(53, 197, 228); color: rgb(255, 255, 255)} .btn-link.cVr6Fvm:active{background-color: rgb(53, 197, 212); color: rgb(234, 234, 234)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cVr6Fvm" class="cVr6Fvm"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="win_dlg" style="left:61px;top:9px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cVr6Fvm" class="cVr6Fvm"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cVr6Fvm" __cid="cVr6Fvm"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cVr6Fvm" style="display:none;" __cid="cVr6Fvm">  
+      <div class="x-dialog-title cVr6Fvm" __cid="cVr6Fvm"> 
+        <button class="close cVr6Fvm" __cid="cVr6Fvm"> 
+          <span __cid="cVr6Fvm" class="cVr6Fvm">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cVr6Fvm" __cid="cVr6Fvm"/> 
+      </div>  
+      <div class="x-dialog-body cVr6Fvm" __cid="cVr6Fvm"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="winRec" style="left:37px;top:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cVr6Fvm" class="cVr6Fvm"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="msg_dlg" style="left:106px;top:13px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cVr6Fvm" class="cVr6Fvm"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cVr6Fvm" __cid="cVr6Fvm"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cVr6Fvm" __cid="cVr6Fvm">  
+      <div class="x-modal-inner cVr6Fvm" __cid="cVr6Fvm"> 
+        <div class="x-modal-title cVr6Fvm" __cid="cVr6Fvm"/>  
+        <div class="x-modal-text cVr6Fvm" __cid="cVr6Fvm"/>  
+        <input class="x-modal-prompt-input cVr6Fvm" type="text" __cid="cVr6Fvm"/> 
+      </div>  
+      <div class="x-modal-buttons cVr6Fvm" __cid="cVr6Fvm"> 
+        <a class="x-modal-button x-modal-button-bold OK cVr6Fvm" value="ok" __cid="cVr6Fvm">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cVr6Fvm" value="yes" __cid="cVr6Fvm">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cVr6Fvm" value="no" __cid="cVr6Fvm">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cVr6Fvm" value="cancel" __cid="cVr6Fvm">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p23a70d7d75f64ba3845f4be784107071-iosstatusbar cVr6Fvm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVr6Fvm"> 
+    <div class="x-panel-top cVr6Fvm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVr6Fvm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cVr6Fvm" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;消息记录&quot;}" __cid="cVr6Fvm"> 
+        <div class="x-titlebar-left cVr6Fvm" xid="div_title_left" __cid="cVr6Fvm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVr6Fvm" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cVr6Fvm"> 
+            <i class="icon-chevron-left cVr6Fvm" xid="i1" __cid="cVr6Fvm"/>  
+            <span xid="span12" __cid="cVr6Fvm" class="cVr6Fvm"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cVr6Fvm" xid="div_title_title" __cid="cVr6Fvm">消息记录</div>  
+        <div class="x-titlebar-right  cVr6Fvm" xid="div_title_right" __cid="cVr6Fvm"> 
+          <div class="empty cVr6Fvm" __cid="cVr6Fvm"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVr6Fvm" xid="btn_clear" style="width:38px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_clearClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-trash-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVr6Fvm"> 
+            <i xid="i6" class="icon-ios7-trash-outline cVr6Fvm" __cid="cVr6Fvm"/>  
+            <span xid="span2" __cid="cVr6Fvm" class="cVr6Fvm"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cVr6Fvm" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVr6Fvm"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cVr6Fvm" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:false}" __cid="cVr6Fvm"> 
+        <div class="x-contents-content x-cards x-scroll-view active cVr6Fvm" xid="listCnt" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cVr6Fvm"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p74e86b798897458cb924d76fdfd05d62-iosstatusbar cVr6Fvm" xid="panel_list" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVr6Fvm"> 
+            <div class="x-scroll cVr6Fvm" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cVr6Fvm"> 
+              <div class="x-content-center x-pull-down container cVr6Fvm" xid="div1" __cid="cVr6Fvm"> 
+                <i class="x-pull-down-img glyphicon x-icon-pull-down cVr6Fvm" xid="i2" __cid="cVr6Fvm"/>  
+                <span class="x-pull-down-label cVr6Fvm" xid="span1" __cid="cVr6Fvm">下拉刷新...</span> 
+              </div>  
+              <div class="x-scroll-content cVr6Fvm" xid="div2" __cid="cVr6Fvm"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list cVr6Fvm" xid="list_notify" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;notification&quot;}" __cid="cVr6Fvm"> 
+                  <ul class="x-list-template hide cVr6Fvm" xid="listTemplateUl2" __cid="cVr6Fvm" data-bind="foreach:{data:$model.foreach_list_notify($element),afterRender:$model.foreach_afterRender_list_notify.bind($model,$element)}"> 
+                    <li xid="li_notify" class="list-group-item x-flex cVr6Fvm" __cid="cVr6Fvm"> 
+                      <div class="x-flex1 cVr6Fvm" xid="div_info" __cid="cVr6Fvm"> 
+                        <h4 style="text-align: justify;" xid="span_licenceNo" __cid="cVr6Fvm" class="cVr6Fvm" data-bind="text:$object.val(&quot;content&quot;)"/>  
+                        <span class="text-muted cVr6Fvm" style="text-align: justify;" xid="span_model" __cid="cVr6Fvm" data-bind="text:$object.val(&quot;recTime&quot;)"/> 
+                      </div>  
+                      <div class="x-swipe-area cVr6Fvm" xid="div_del" __cid="cVr6Fvm" data-bind="event:{click:$model._callModelFn.bind($model, 'div_delClick')}">删除</div> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </div>  
+              <div class="x-content-center x-pull-up cVr6Fvm" xid="div3" __cid="cVr6Fvm"> 
+                <span class="x-pull-up-label cVr6Fvm" xid="span3" __cid="cVr6Fvm">加载更多...</span> 
+              </div> 
+            </div>  
+            <style __cid="cVr6Fvm" class="cVr6Fvm">.x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p74e86b798897458cb924d76fdfd05d62-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cVr6Fvm" class="cVr6Fvm">.x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p23a70d7d75f64ba3845f4be784107071-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

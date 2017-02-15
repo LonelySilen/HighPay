@@ -1,0 +1,76 @@
+/*顶部titlebar**********************************************/
+.x-titlebar {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+.interval {
+	height: 10px;
+	background-color: #eee;
+}
+/*阴影效果*/
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-left {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-right {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	
+}
+
+.x-titlebar .btn {
+	/*padding: 0;
+	margin: 0;*/
+}
+
+.x-titlebar .btn>span {
+	font-size: 10px;
+	line-height: 1;
+}
+
+
+.img5 {
+	width: 48px;
+	height: 48px;
+}
+
+.text-muted {
+	padding: 5px;
+}
+
+.x-swipe-area{
+	text-align: center;
+	padding-top: 40px;
+    font-size: 1.5em;
+    background: red;
+    color: white;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transform: translate3d(100%,0,0);
+    -webkit-transform: translate3d(100%,0,0);
+    right:0;
+}
+
+.x-list{
+	overflow-x:hidden;
+}
+
+.btn-link {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+/* .btn-link:active {
+	background-color: #35c5d4;
+	color: #EAEAEA;
+} */

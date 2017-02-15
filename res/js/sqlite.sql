@@ -1,0 +1,63 @@
+CREATE TABLE IF NOT EXISTS GPS_DATA (
+	id 		VARCHAR(100) NOT NULL PRIMARY KEY,
+	latitude 		DOUBLE,
+	Longitude 		DOUBLE,
+	Name		VARCHAR(100),
+	UpdateTime		DATETIME
+);
+
+CREATE TABLE IF NOT EXISTS SECTION_DATA (
+	id 		VARCHAR(100) NOT NULL PRIMARY KEY,
+	Latitude 		DOUBLE,
+	Longitude 		DOUBLE,
+	Name		VARCHAR(100),
+	Radius		int
+);
+
+CREATE TABLE IF NOT EXISTS INFO_DATA (
+	id 		VARCHAR(100) NOT NULL PRIMARY KEY,
+	accountName 		VARCHAR(100),
+	mobileNo 		VARCHAR(100),
+	paymentAccount		VARCHAR(100),
+	defCarNo		VARCHAR(100),
+	driverName		VARCHAR(100),
+	driverNo		VARCHAR(100)
+);
+
+CREATE TABLE IF NOT EXISTS PLATE_DATA (
+	id 		VARCHAR(100) NOT NULL PRIMARY KEY,
+	licenceNo 		VARCHAR(100),
+	vehicleModel 		VARCHAR(100),
+	userId			VARCHAR(100)
+);
+
+CREATE TABLE IF NOT EXISTS NOTIFY_DATA (
+	id 		VARCHAR(100) NOT NULL PRIMARY KEY,
+	content 		VARCHAR(100),
+	recTime			DATETIME,
+	userId			VARCHAR(100)
+);
+
+CREATE TABLE IF NOT EXISTS RECORD_DATA (
+	id 		VARCHAR(100) NOT NULL PRIMARY KEY,
+	UserId 		VARCHAR(100),
+	ExitTollGateId 		VARCHAR(100),
+	EnterTollGateId 		VARCHAR(100),
+	ExitTollGateName 		VARCHAR(100),
+	EnterTollGateName 		VARCHAR(100),
+	ExitLicenseNo 		VARCHAR(100),
+	Money 		VARCHAR(100),
+	VehicleModel 		VARCHAR(100),
+	EnterDateTime 		DATETIME,
+	ExitDateTime 		DATETIME
+);
+
+CREATE TABLE IF NOT EXISTS TEMP_DATA (
+	userId 		VARCHAR(100) NOT NULL PRIMARY KEY,
+	userName 		VARCHAR(100),
+	enterTollGateId 		VARCHAR(100),
+	enterTollGateName 		VARCHAR(100),
+	licenceNo 		VARCHAR(100),
+	enterDateTime 	VARCHAR(100),
+	enterType 		VARCHAR(100)
+);

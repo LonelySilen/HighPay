@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+body,html,#allmap {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+#golist {
+	display: none;
+}
+
+@media ( max-device-width : 780px) {
+	#golist {
+		display: block !important;
+	}
+}
+</style>
+<script type="text/javascript"
+	src="http://api.map.baidu.com/api?v=2.0&ak=EzfQTH533pbevnhohMX4QZRK"></script>
+<script type="text/javascript"
+	src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+<title>地图</title>
+<Script language="javascript">
+		var map;
+		var cur_longitude = localStorage.getItem('longitude');//119.126605;
+		var cur_latitude = localStorage.getItem('latitude');//39.095655;
+	  	window.onload = map_load;  
+	  	
+	  	function map_load() {  
+      	//异步调用百度js  注意ak要换成您的密钥
+//      	var load = document.createElement("script");  
+//	      	load.src = "http://api.map.baidu.com/api?v=2.0&ak=EzfQTH533pbevnhohMX4QZRK&callback=map_init";  
+//      	document.head.appendChild(load);
+			
+			var gpsPoint = new BMap.Point(cur_longitude,cur_latitude);
+			BMap.Convertor.translate(gpsPoint,0,map_init);
+	  	}
+		
+	  	function map_init(point){
+			map = new BMap.Map("allmap"); // 创建Map实例  
+			var _initPoint = point;//new BMap.Point(cur_longitude,cur_latitude);
+	        map.centerAndZoom(_initPoint,17);
+	        map.enableScrollWheelZoom(true); //启用滚轮放大缩小  
+	        map.enableDragging();   //开启拖拽
+	        //向地图中添加缩放控件  
+	        var ctrlNav = new window.BMap.NavigationControl({  
+	        	anchor: BMAP_ANCHOR_TOP_LEFT,  
+	        	type: BMAP_NAVIGATION_CONTROL_LARGE  
+	        });
+	        map.addControl(ctrlNav);  
+	  
+	        //向地图中添加缩略图控件  
+/*	        var ctrlOve = new window.BMap.OverviewMapControl({  
+	        	anchor: BMAP_ANCHOR_BOTTOM_RIGHT,  
+	        	isOpen: 1  
+	        });  
+	        map.addControl(ctrlOve);  
+	  
+	         //向地图中添加比例尺控件  
+	        var ctrlSca = new window.BMap.ScaleControl({  
+	        	anchor: BMAP_ANCHOR_BOTTOM_LEFT  
+	        });  
+	        map.addControl(ctrlSca);  
+*/
+	        var logo = new BMap.Icon('location.png', new BMap.Size(24, 24), {anchor: new BMap.Size(10, 30)});
+	        var justepMarker = new BMap.Marker(_initPoint, {icon: logo});
+	        map.addOverlay(justepMarker);
+		}; 
+		
+		//坐标转换完之后的回调函数
+		var marker = null;
+		function translateCallback(point){
+			if(marker!=null)
+				map.removeOverlay(marker);
+			
+		    marker = new BMap.Marker(point); //按照地图点坐标生成标记  
+		    map.addOverlay(marker);
+		    var label = new BMap.Label("当前位置",{offset:new BMap.Size(20,-10)});
+		    marker.setLabel(label); //添加百度label
+		    map.panTo(point);   //移动到当前位置
+		}
+
+		function movePos(longitude, latitude){
+			var gpsPoint = new BMap.Point(longitude,latitude);
+			BMap.Convertor.translate(gpsPoint,0,translateCallback);
+			
+//        	var point = new BMap.Point(longitude,latitude);
+//        	var marker = new BMap.Marker(point); //按照地图点坐标生成标记  
+//        	map.addOverlay(marker);  
+//        	var label = new BMap.Label("当前位置", { offset: new window.BMap.Size(20, -10) });  
+//        	marker.setLabel(label);  
+
+//        	map.panTo(point);   //移动到当前位置
+		};
+	</Script>
+</head>
+<body>
+	<div id="allmap"></div>
+</body>
+</html>

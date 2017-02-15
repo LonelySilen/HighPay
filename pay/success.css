@@ -1,0 +1,47 @@
+/*顶部titlebar**********************************************/
+.x-titlebar {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+.interval {
+	height: 10px;
+	background-color: #eee;
+}
+/*阴影效果*/
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-left {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-right {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	
+}
+
+.x-titlebar .btn {
+	/*padding: 0;
+	margin: 0;*/
+}
+
+.x-titlebar .btn>span {
+	
+	line-height: 1;
+}
+/******************************************************/
+
+.img5 {
+	width: 48px;
+	height: 48px;
+}
+
+.text-muted {
+	padding: 5px;
+}

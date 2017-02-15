@@ -1,0 +1,107 @@
+/*顶部titlebar**********************************************/
+.x-titlebar {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+.interval {
+	height: 10px;
+	background-color: #eee;
+}
+/*阴影效果*/
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-left {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-right {
+	/*padding: 0px;*/
+	border-bottom:1px solid #CCC;
+}
+.x-titlebar .x-titlebar-title {
+	/*padding: 0px;*/
+	
+}
+
+.x-titlebar .x-titlebar-title .seach {
+	width: 80%;
+	border-radius: 0px 0px 5px 5px;
+	border: none;
+	background: none;
+	box-shadow: none;
+	border-bottom: 1px solid #fff;
+}
+
+.x-titlebar .x-titlebar-title .seach-btn {
+	width: 20%;
+	padding-top: 15px;
+}
+
+.x-titlebar .btn {
+	/*padding: 0;
+	margin: 0;*/
+}
+
+.x-titlebar .btn>span {
+	font-size: 10px;
+	line-height: 1;
+}
+/*内容部分*****************************************************/
+/*图标样式*/
+.btnImg {
+	width: 25px;
+	height: 25px;
+	padding: 2px;
+	border-radius: 30px;
+	background-color: #35c5e4; /*#2fa4e7*/
+	color: #fff;
+}
+
+.panel-heading {
+	height: 50px;
+	font-size: 20px;
+	padding-top: 25px;
+}
+
+.list-group-item:hover,.panel-heading:hover {
+	/**background-color: #35c5e4;**/
+}
+
+/**affter**/
+
+/* button alert */
+.tip-bubble {
+	position: relative;
+	background-color: #202020;
+	width: 100px;
+	padding: 0px;
+	color: #CCC;
+	text-align: center;
+	border-radius: 1px;
+	margin: 1px;
+	border: 1px solid #111;
+	box-shadow: 1px 1px 2px #202020;
+	-moz-box-shadow: 1px 1px 2px #202020;
+	-webkit-border-shadow: 1px 1px 2px #202020;
+	text-shadow: 0px 0px 15px #fff;
+}
+
+/* Position the Arrow */
+.tip-bubble-top:after {
+	border-bottom-color: #202020;
+	right: 5px;
+	bottom: 100%;
+}
+
+.btn-link {
+	background-color: #FFFFFF;
+	color: #828282;
+}
+
+/* .btn-link:active {
+	background-color: #35c5d4;
+	color: #EAEAEA;
+} */

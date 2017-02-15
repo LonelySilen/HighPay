@@ -1,0 +1,24 @@
+.h6 {
+	color: #555;/*#32bd60;*/
+}
+.img5{ width:48px; height:48px;}
+.icon{ font-size: 48px;}
+.btn-link2 {
+	background-color: #35c5e4;
+	color: #FFFFFF;
+	font-size : 21px;
+}
+
+.btn-link2:active {
+	background-color: #35c5e4;
+	color: #EAEAEA;
+}
+
+.x-red {
+	color: #FFFFFF;
+	font-size : 21px;
+}
+
+.x-red:active {
+	color: #EAEAEA;
+}

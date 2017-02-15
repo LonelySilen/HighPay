@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cjqMR7z" component="$model/UI2/system/components/justep/window/window" design="device:m;resolution:420 x 640;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjqMR7z" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/button/button,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cjqMR7z{background-color: rgb(53, 197, 228); color: rgb(255, 255, 255)} .img5.cjqMR7z{width: 48px; height: 48px} .interval.cjqMR7z{height: 10px; background-color: rgb(238, 238, 238)} .x-titlebar.cjqMR7z .x-titlebar-title.cjqMR7z{} .x-titlebar.cjqMR7z .x-titlebar-title.cjqMR7z .seach.cjqMR7z{width: 80%; border-radius: 0px 0px 5px 5px; border: none; background: none; box-shadow: none; border-bottom: 1px solid rgb(255, 255, 255)} .x-titlebar.cjqMR7z .x-titlebar-title.cjqMR7z .seach-btn.cjqMR7z{width: 20%; padding-top: 15px} .x-titlebar.cjqMR7z .btn.cjqMR7z{padding: 0; margin: 0} .x-titlebar.cjqMR7z .btn.cjqMR7z &gt; span.cjqMR7z{font-size: 10px; line-height: 1} .btnImg.cjqMR7z{width: 25px; height: 25px; padding: 2px; border-radius: 30px; background-color: rgb(53, 197, 228); color: rgb(255, 255, 255)} .panel-heading.cjqMR7z{height: 50px; font-size: 20px; padding-top: 25px} .list-group-item.cjqMR7z:active, .panel-heading.cjqMR7z:hover{background-color: rgb(53, 197, 228)} .tip-bubble.cjqMR7z{position: relative; background-color: rgb(32, 32, 32); width: 100px; padding: 0px; color: rgb(204, 204, 204); text-align: center; border-radius: 1px; margin: 1px; border: 1px solid rgb(17, 17, 17); box-shadow: 1px 1px 2px rgb(32, 32, 32); -moz-box-shadow: 1px 1px 2px rgb(32, 32, 32); -webkit-border-shadow: 1px 1px 2px rgb(32, 32, 32); text-shadow: 0px 0px 15px rgb(255, 255, 255)} .tip-bubble-top.cjqMR7z:after{border-bottom-color: rgb(32, 32, 32); right: 5px; bottom: 100%} .text-danger.cjqMR7z{color: rgb(255, 0, 0)} .grid91.cjqMR7z .grid.cjqMR7z{margin: 0; padding: 0; border: 0} .grid91.cjqMR7z .cell.cjqMR7z .card.cjqMR7z{width: 56px; margin: 10px auto; text-align: center; border: 0px solid rgb(136, 136, 136); border-radius: 6px; padding: 5px; box-sizing: content-box} .grid91.cjqMR7z .cell.cjqMR7z .card.cjqMR7z i.cjqMR7z{margin-top: 5px; margin-bottom: 10px; font-size: 32px; color: rgb(136, 136, 136)} .grid91.cjqMR7z .cell.cjqMR7z .card.cjqMR7z .title.cjqMR7z{display: block; text-align: center; word-wrap: break-word} .h6.cjqMR7z{color: rgb(85, 85, 85)} .img5.cjqMR7z{width: 48px; height: 48px} .icon.cjqMR7z{font-size: 48px} .btn-link2.cjqMR7z{background-color: rgb(53, 197, 228); color: rgb(255, 255, 255); font-size: 21px} .btn-link2.cjqMR7z:active{background-color: rgb(53, 197, 228); color: rgb(234, 234, 234)} .x-red.cjqMR7z{color: rgb(255, 255, 255); font-size: 21px} .x-red.cjqMR7z:active{color: rgb(234, 234, 234)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cjqMR7z" class="cjqMR7z"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="exitMsgDlg" style="left:47px;top:11px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:exitMsgDlgOK;onClose:exitMsgDlgClose" data-config="{&quot;message&quot;:&quot;确定要退出吗？&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cjqMR7z" class="cjqMR7z"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cjqMR7z" __cid="cjqMR7z"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cjqMR7z" __cid="cjqMR7z">  
+      <div class="x-modal-inner cjqMR7z" __cid="cjqMR7z"> 
+        <div class="x-modal-title cjqMR7z" __cid="cjqMR7z"/>  
+        <div class="x-modal-text cjqMR7z" __cid="cjqMR7z">确定要退出吗？</div>  
+        <input class="x-modal-prompt-input cjqMR7z" type="text" __cid="cjqMR7z"/> 
+      </div>  
+      <div class="x-modal-buttons cjqMR7z" __cid="cjqMR7z"> 
+        <a class="x-modal-button x-modal-button-bold OK cjqMR7z" value="ok" __cid="cjqMR7z">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cjqMR7z" value="yes" __cid="cjqMR7z">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cjqMR7z" value="no" __cid="cjqMR7z">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cjqMR7z" value="cancel" __cid="cjqMR7z">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="winDlg_main" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="cjqMR7z" class="cjqMR7z"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cjqMR7z" __cid="cjqMR7z"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cjqMR7z" style="display:none;" __cid="cjqMR7z">  
+      <div class="x-dialog-title cjqMR7z" __cid="cjqMR7z"> 
+        <button class="close cjqMR7z" __cid="cjqMR7z"> 
+          <span __cid="cjqMR7z" class="cjqMR7z">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cjqMR7z" __cid="cjqMR7z"/> 
+      </div>  
+      <div class="x-dialog-body cjqMR7z" __cid="cjqMR7z"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="winRec" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cjqMR7z" class="cjqMR7z"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cjqMR7z" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:false}" __cid="cjqMR7z"> 
+    <div class="x-contents-content active cjqMR7z" xid="main" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cjqMR7z"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p4e3c00006d36451197db6d1ef5597491-iosstatusbar cjqMR7z" xid="mainPanel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjqMR7z"> 
+        <div class="x-panel-top cjqMR7z" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjqMR7z"> 
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjqMR7z" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;高速移动支付&quot;}" __cid="cjqMR7z"> 
+            <div class="x-titlebar-left cjqMR7z" xid="div_title_left" __cid="cjqMR7z"/>  
+            <div class="x-titlebar-title cjqMR7z" xid="div_title_title" id="tops" __cid="cjqMR7z">快速通过</div>  
+            <div class="x-titlebar-right  cjqMR7z" xid="div_title_right" __cid="cjqMR7z"> 
+              <div class="empty cjqMR7z" __cid="cjqMR7z"/>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjqMR7z" xid="button2" style="width:38px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:mapBtnClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-location-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjqMR7z"> 
+                <i xid="i6" class="icon-ios7-location-outline cjqMR7z" __cid="cjqMR7z"/>  
+                <span xid="span2" __cid="cjqMR7z" class="cjqMR7z"/> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cjqMR7z" xid="mainContent" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjqMR7z"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cjqMR7z" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:false,&quot;swipe&quot;:false}" __cid="cjqMR7z"> 
+            <div class="x-contents-content x-cards  x-scroll-view active cjqMR7z" xid="passCnt" style="height:100%;width:100%;" onactive="passCntActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:passCntActive" __cid="cjqMR7z"> 
+              <div class="x-scroll cjqMR7z" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView4" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cjqMR7z"> 
+                <div class="x-scroll-content cjqMR7z" xid="div4" __cid="cjqMR7z"> 
+                  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cjqMR7z" xid="controlGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;title&quot;}" __cid="cjqMR7z"> 
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list cjqMR7z" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;tempData&quot;}" __cid="cjqMR7z"> 
+                      <ul class="x-list-template hide cjqMR7z" xid="listTemplateUl2" __cid="cjqMR7z" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                        <li xid="li1" class="list-group-item x-flex cjqMR7z" __cid="cjqMR7z"> 
+                          <div class="x-flex1 cjqMR7z" xid="div11" __cid="cjqMR7z"> 
+                            <div class="text-muted cjqMR7z" xid="div8" __cid="cjqMR7z"> 
+                              <span xid="span39" class="text-warning cjqMR7z" __cid="cjqMR7z">最近通行记录：</span>  
+                              <span xid="span35" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:$object.val(&quot;enterDateTime&quot;)">入口时间</span> 
+                            </div>  
+                            <div class="text-muted cjqMR7z" xid="div7" __cid="cjqMR7z"> 
+                              <span xid="span37" class="text-primary cjqMR7z" __cid="cjqMR7z">用户名：</span>  
+                              <span xid="span38" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:ref('userName')">张三</span> 
+                            </div>  
+                            <div class="text-muted cjqMR7z" xid="div13" __cid="cjqMR7z"> 
+                              <span xid="span45" class="text-primary cjqMR7z" __cid="cjqMR7z">车牌号：</span>  
+                              <span xid="span46" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:$object.val(&quot;licenceNo&quot;)">No123456</span> 
+                            </div>  
+                            <div class="text-muted cjqMR7z" xid="div9" __cid="cjqMR7z"> 
+                              <span xid="span33" class="text-primary cjqMR7z" __cid="cjqMR7z">入站口：</span>  
+                              <span xid="span36" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:$object.val(&quot;enterTollGateName&quot;)">入口名</span> 
+                            </div>  
+                            <div class="text-muted cjqMR7z" xid="div24" __cid="cjqMR7z"> 
+                              <span xid="span53" class="text-primary cjqMR7z" __cid="cjqMR7z">通过方式：</span>  
+                              <span xid="span51" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:$object.val(&quot;enterType&quot;)">快速通过</span> 
+                            </div> 
+                          </div> 
+                        </li> 
+                      </ul> 
+                    </div>  
+                    <div xid="div6" __cid="cjqMR7z" class="cjqMR7z"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link2 btn-block device-button-white cjqMR7z" xid="quickPassBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:quickPassBtnClick" data-config="{&quot;label&quot;:&quot;快速通过&quot;}" __cid="cjqMR7z"> 
+                        <i xid="i39" __cid="cjqMR7z" class="cjqMR7z"/>  
+                        <span xid="span25" __cid="cjqMR7z" class="cjqMR7z">快速通过</span> 
+                      </a>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn x-red btn-block device-button-white cjqMR7z" xid="stopQPassBtn" style="display:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:stopQPassBtnClick" data-config="{&quot;label&quot;:&quot;停止快速通过&quot;}" __cid="cjqMR7z"> 
+                        <i xid="i34" __cid="cjqMR7z" class="cjqMR7z"/>  
+                        <span xid="span26" __cid="cjqMR7z" class="cjqMR7z">停止快速通过</span> 
+                      </a> 
+                    </div> 
+                  </div>  
+                  <div xid="contentDiv" __cid="cjqMR7z" class="cjqMR7z"> 
+                    <div id="titleDiv" xid="titleDiv" __cid="cjqMR7z" class="cjqMR7z" data-bind="text:contentData.ref('title')"/>  
+                    <div id="xDiv" xid="xDiv" __cid="cjqMR7z" class="cjqMR7z" data-bind="text:contentData.ref('x')"/>  
+                    <div id="yDiv" xid="yDiv" __cid="cjqMR7z" class="cjqMR7z" data-bind="text:contentData.ref('y')"/>  
+                    <div id="zDiv" xid="zDiv" __cid="cjqMR7z" class="cjqMR7z" data-bind="text:contentData.ref('z')"/>  
+                    <div id="div6" xid="hDiv" __cid="cjqMR7z" class="cjqMR7z" data-bind="text:$model.contentData.val(&quot;h&quot;)"/>  
+                    <div id="div4" xid="sDiv" __cid="cjqMR7z" class="cjqMR7z" data-bind="text:$model.contentData.val(&quot;s&quot;)"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content x-cards  x-scroll-view cjqMR7z" xid="scanCnt" style="height:100%;width:100%;" onactive="scanCntActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:scanCntActive" __cid="cjqMR7z"> 
+              <div class="x-scroll cjqMR7z" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView3" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cjqMR7z"> 
+                <div class="x-scroll-content cjqMR7z" xid="div3" __cid="cjqMR7z"> 
+                  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cjqMR7z" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;title&quot;}" __cid="cjqMR7z"> 
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list cjqMR7z" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;tempData&quot;}" __cid="cjqMR7z"> 
+                      <ul class="x-list-template hide cjqMR7z" xid="listTemplateUl1" __cid="cjqMR7z" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                        <li xid="li2" class="list-group-item x-flex cjqMR7z" __cid="cjqMR7z"> 
+                          <div class="x-flex1 cjqMR7z" xid="div31" __cid="cjqMR7z"> 
+                            <div class="text-muted cjqMR7z" xid="div33" __cid="cjqMR7z"> 
+                              <span xid="span56" class="text-warning cjqMR7z" __cid="cjqMR7z">最近通行记录：</span>  
+                              <span xid="span58" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:$object.val(&quot;enterDateTime&quot;)">入口时间</span> 
+                            </div>  
+                            <div class="text-muted cjqMR7z" xid="div36" __cid="cjqMR7z"> 
+                              <span xid="span61" class="text-primary cjqMR7z" __cid="cjqMR7z">用户名：</span>  
+                              <span xid="span62" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:ref('userName')">张三</span> 
+                            </div>  
+                            <div class="text-muted cjqMR7z" xid="div25" __cid="cjqMR7z"> 
+                              <span xid="span60" class="text-primary cjqMR7z" __cid="cjqMR7z">车牌号：</span>  
+                              <span xid="span64" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:$object.val(&quot;licenceNo&quot;)">No123456</span> 
+                            </div>  
+                            <div class="text-muted cjqMR7z" xid="div32" __cid="cjqMR7z"> 
+                              <span xid="span63" class="text-primary cjqMR7z" __cid="cjqMR7z">入站口：</span>  
+                              <span xid="span59" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:$object.val(&quot;enterTollGateName&quot;)">入口名</span> 
+                            </div>  
+                            <div class="text-muted cjqMR7z" xid="div37" __cid="cjqMR7z"> 
+                              <span xid="span57" class="text-primary cjqMR7z" __cid="cjqMR7z">通过方式：</span>  
+                              <span xid="span65" class="pull-right text-danger cjqMR7z" __cid="cjqMR7z" data-bind="text:$object.val(&quot;enterType&quot;)">快速通过</span> 
+                            </div> 
+                          </div> 
+                        </li> 
+                      </ul> 
+                    </div>  
+                    <div xid="div1" __cid="cjqMR7z" class="cjqMR7z"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link2 btn-block device-button-white cjqMR7z" xid="scanBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:scanBtnClick" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;扫一扫&quot;}" __cid="cjqMR7z"> 
+                        <i xid="i27" __cid="cjqMR7z" class="cjqMR7z"/>  
+                        <span xid="span24" __cid="cjqMR7z" class="cjqMR7z">扫一扫</span> 
+                      </a> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content x-cards cjqMR7z" xid="incCnt" style="height:100%;width:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:incCntActive" __cid="cjqMR7z"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar cjqMR7z" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjqMR7z"> 
+                <div class="x-panel-content grid91 x-scroll-view cjqMR7z" xid="content3" style="top: 0px; bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjqMR7z"> 
+                  <div class="x-scroll cjqMR7z" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cjqMR7z"> 
+                    <div class="x-scroll-content cjqMR7z" xid="div2" __cid="cjqMR7z"> 
+                      <div component="$model/UI2/system/components/bootstrap/row/row" class="row grid cjqMR7z" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cjqMR7z"> 
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col14" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'clearCatch')}"> 
+                          <div class="card cjqMR7z" xid="div26" __cid="cjqMR7z"> 
+                            <i class="icon-android-trash cjqMR7z" style="color: rgb(153, 196, 18);" xid="i20" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span17" __cid="cjqMR7z">清除缓存</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col4" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'getRegistrationID')}"> 
+                          <div class="card cjqMR7z" xid="div16" __cid="cjqMR7z"> 
+                            <i class="icon-hammer cjqMR7z" style="color: rgb(153, 196, 18);" xid="i9" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span5" __cid="cjqMR7z">推送ID</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col8" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'mapBtnClick')}"> 
+                          <div class="card cjqMR7z" xid="div20" __cid="cjqMR7z"> 
+                            <i class="icon-android-location cjqMR7z" style="color:#FF8080;" xid="i13" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span10" __cid="cjqMR7z">地图</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col2" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div14" __cid="cjqMR7z"> 
+                            <i class="icon-android-alarm cjqMR7z" style="color:#FF8080;" xid="i7" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span3" __cid="cjqMR7z">时钟</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col3" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div15" __cid="cjqMR7z"> 
+                            <i class="icon-android-battery cjqMR7z" style="color:#FF8000;" xid="i8" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span4" __cid="cjqMR7z">电池电量</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col5" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div17" __cid="cjqMR7z"> 
+                            <i class="icon-android-camera cjqMR7z" style="color:#C0C0C0;" xid="i10" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span7" __cid="cjqMR7z">相机</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col6" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div18" __cid="cjqMR7z"> 
+                            <i class="icon-android-lightbulb cjqMR7z" style="color:#FF8040;" xid="i11" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span8" __cid="cjqMR7z">手电筒</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col7" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div19" __cid="cjqMR7z"> 
+                            <i class="icon-android-locate cjqMR7z" style="color:#0080FF;" xid="i12" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span9" __cid="cjqMR7z">指南针</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col9" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div21" __cid="cjqMR7z"> 
+                            <i class="icon-android-mail cjqMR7z" style="color:#FF8000;" xid="i14" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span11" __cid="cjqMR7z">电子邮件</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col10" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div22" __cid="cjqMR7z"> 
+                            <i class="icon-android-microphone cjqMR7z" style="color: rgb(153, 196, 18);" xid="i16" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span12" __cid="cjqMR7z">录音机</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col15" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div27" __cid="cjqMR7z"> 
+                            <i class="icon-android-wifi cjqMR7z" style="color:#FF80C0;" xid="i21" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span18" __cid="cjqMR7z">WLAN</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col16" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div28" __cid="cjqMR7z"> 
+                            <i class="icon-heart cjqMR7z" style="color:#FF8080;" xid="i22" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span19" __cid="cjqMR7z">收藏</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col17" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div29" __cid="cjqMR7z"> 
+                            <i class="icon-clipboard cjqMR7z" style="color:#FF8000;" xid="i23" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span20" __cid="cjqMR7z">便签</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col18" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div30" __cid="cjqMR7z"> 
+                            <i class="icon-cloud cjqMR7z" style="color:#8BBBCD;" xid="i24" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span21" __cid="cjqMR7z">云</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col19" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div34" __cid="cjqMR7z"> 
+                            <i class="icon-ios7-musical-notes cjqMR7z" style="color:#8000FF;" xid="i25" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span22" __cid="cjqMR7z">音乐</span> 
+                          </div> 
+                        </div>  
+                        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cjqMR7z" xid="col20" __cid="cjqMR7z"> 
+                          <div class="card cjqMR7z" xid="div35" __cid="cjqMR7z"> 
+                            <i class="icon-film-marker cjqMR7z" style="color: rgb(153, 196, 18);" xid="i26" __cid="cjqMR7z"/>  
+                            <span class="title cjqMR7z" xid="span23" __cid="cjqMR7z">摄像机</span> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="cjqMR7z" class="cjqMR7z">.x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p9aabbf61aeab477bb77476aa11f13d6f-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+              </div> 
+            </div>  
+            <div class="x-contents-content x-cards cjqMR7z" xid="mineCnt" style="height:100%;width:100%;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:mineCntActive" __cid="cjqMR7z"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar cjqMR7z" xid="pnl_mine" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjqMR7z"> 
+                <div class="x-scroll cjqMR7z" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cjqMR7z"> 
+                  <div class="x-scroll-content cjqMR7z" xid="div5" __cid="cjqMR7z"> 
+                    <ul class="list-group cjqMR7z" xid="ul_info" __cid="cjqMR7z"> 
+                      <li class="list-group-item cjqMR7z" xid="li_info" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'li_infoClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btnImg cjqMR7z" xid="btn_info" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-person-add&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjqMR7z"> 
+                          <i xid="i38" class="icon-person-add cjqMR7z" __cid="cjqMR7z"/>  
+                          <span xid="span28" __cid="cjqMR7z" class="cjqMR7z"/> 
+                        </a>  
+                        <span xid="span_info" __cid="cjqMR7z" class="cjqMR7z">注册信息</span>  
+                        <span class="pull-right text-muted cjqMR7z" xid="span_info_right" __cid="cjqMR7z"> 
+                          <i xid="i41" class="icon-ios7-arrow-forward cjqMR7z" __cid="cjqMR7z"/> 
+                        </span> 
+                      </li>  
+                      <li class="list-group-item cjqMR7z" xid="li_msg" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'li_msgClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btnImg cjqMR7z" xid="btn_msg" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-bell&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjqMR7z"> 
+                          <i xid="i37" class="icon-ios7-bell cjqMR7z" __cid="cjqMR7z"/>  
+                          <span xid="span29" __cid="cjqMR7z" class="cjqMR7z"/> 
+                        </a>  
+                        <span xid="span_msg" __cid="cjqMR7z" class="cjqMR7z">消息记录</span>  
+                        <span class="pull-right text-muted cjqMR7z" xid="span_exit_right" __cid="cjqMR7z"> 
+                          <i xid="i43" class="icon-ios7-arrow-forward cjqMR7z" __cid="cjqMR7z"/> 
+                        </span>  
+                        <span class="pull-right text-danger text-muted cjqMR7z" xid="span_msg_info" __cid="cjqMR7z" data-bind="text:$model.getNotifyCount(event)"/> 
+                      </li>  
+                      <li class="list-group-item cjqMR7z" xid="li_plate" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'li_plateClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btnImg cjqMR7z" xid="btn_plate" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-mixer&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjqMR7z"> 
+                          <i xid="i36" class="icon-android-mixer cjqMR7z" __cid="cjqMR7z"/>  
+                          <span xid="span34" __cid="cjqMR7z" class="cjqMR7z"/> 
+                        </a>  
+                        <span xid="span_plate" __cid="cjqMR7z" class="cjqMR7z">车牌管理</span>  
+                        <span class="pull-right text-muted cjqMR7z" xid="span_plate_right" __cid="cjqMR7z"> 
+                          <i xid="i43" class="icon-ios7-arrow-forward cjqMR7z" __cid="cjqMR7z"/> 
+                        </span> 
+                      </li>  
+                      <li class="list-group-item cjqMR7z" xid="li_history" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'li_historyClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btnImg cjqMR7z" xid="btn_history" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-social-buffer&quot;,&quot;label&quot;:&quot;button&quot;,&quot;target&quot;:&quot;main&quot;}" __cid="cjqMR7z"> 
+                          <i xid="i35" class="icon-social-buffer cjqMR7z" __cid="cjqMR7z"/>  
+                          <span xid="span44" __cid="cjqMR7z" class="cjqMR7z"/> 
+                        </a>  
+                        <span xid="span_history" __cid="cjqMR7z" class="cjqMR7z">通行记录</span>  
+                        <span class="pull-right text-muted cjqMR7z" xid="span_history_right" __cid="cjqMR7z"> 
+                          <i xid="i44" class="icon-ios7-arrow-forward cjqMR7z" __cid="cjqMR7z"/> 
+                        </span> 
+                      </li> 
+                    </ul>  
+                    <ul class="list-group cjqMR7z" xid="ul_about" __cid="cjqMR7z"> 
+                      <li class="list-group-item cjqMR7z" xid="li_about" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'li_aboutClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btnImg cjqMR7z" xid="btn_about" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-gear&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjqMR7z"> 
+                          <i xid="i50" class="icon-ios7-gear cjqMR7z" __cid="cjqMR7z"/>  
+                          <span xid="span55" __cid="cjqMR7z" class="cjqMR7z"/> 
+                        </a>  
+                        <span xid="span_about" __cid="cjqMR7z" class="cjqMR7z">关于</span>  
+                        <span class="pull-right text-muted cjqMR7z" xid="span_about_right" __cid="cjqMR7z"> 
+                          <i xid="i49" class="icon-ios7-arrow-forward cjqMR7z" __cid="cjqMR7z"/> 
+                        </span>  
+                        <span class="pull-right text-danger text-muted cjqMR7z" xid="span_about_info" __cid="cjqMR7z"> 
+                          <i xid="i49" class="icon-ios7-information cjqMR7z" __cid="cjqMR7z"/> 
+                        </span> 
+                      </li>  
+                      <li class="list-group-item cjqMR7z" xid="li_update" __cid="cjqMR7z"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btnImg cjqMR7z" xid="btn_update" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-download&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjqMR7z"> 
+                          <i xid="i47" class="icon-android-download cjqMR7z" __cid="cjqMR7z"/>  
+                          <span xid="span54" __cid="cjqMR7z" class="cjqMR7z"/> 
+                        </a>  
+                        <span xid="span_update" __cid="cjqMR7z" class="cjqMR7z">软件更新</span>  
+                        <span class="pull-right text-muted cjqMR7z" xid="span_update_right" __cid="cjqMR7z"> 
+                          <i xid="i43" class="icon-ios7-arrow-forward cjqMR7z" __cid="cjqMR7z"/> 
+                        </span>  
+                        <span class="pull-right text-danger text-muted cjqMR7z" xid="span_update_info" __cid="cjqMR7z">有更新可用</span> 
+                      </li>  
+                      <li class="list-group-item cjqMR7z" xid="li_exit" __cid="cjqMR7z" data-bind="event:{click:$model._callModelFn.bind($model, 'exit')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon btnImg cjqMR7z" xid="btn_exit" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-log-out&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjqMR7z"> 
+                          <i xid="i48" class="icon-log-out cjqMR7z" __cid="cjqMR7z"/>  
+                          <span xid="span52" __cid="cjqMR7z" class="cjqMR7z"/> 
+                        </a>  
+                        <span xid="span_exit" __cid="cjqMR7z" class="cjqMR7z">退出</span>  
+                        <span class="pull-right text-muted cjqMR7z" xid="span_exit_right" __cid="cjqMR7z"> 
+                          <i xid="i43" class="icon-ios7-arrow-forward cjqMR7z" __cid="cjqMR7z"/> 
+                        </span> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div>  
+                <style __cid="cjqMR7z" class="cjqMR7z">.x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pafefc63b34b14039bd9a5cd9957b5f8b-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cjqMR7z" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjqMR7z"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cjqMR7z" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;passBtn&quot;,&quot;tabbed&quot;:true}" __cid="cjqMR7z"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cjqMR7z" xid="passBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-locate&quot;,&quot;label&quot;:&quot;快速通过&quot;,&quot;target&quot;:&quot;passCnt&quot;}" __cid="cjqMR7z"> 
+              <i xid="i1" class="icon-android-locate cjqMR7z" __cid="cjqMR7z"/>  
+              <span xid="pass_span" __cid="cjqMR7z" class="cjqMR7z">快速通过</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cjqMR7z" xid="scancodeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-pinpoint&quot;,&quot;label&quot;:&quot;扫码通过&quot;,&quot;target&quot;:&quot;scanCnt&quot;}" __cid="cjqMR7z"> 
+              <i xid="i3" class="icon-pinpoint cjqMR7z" __cid="cjqMR7z"/>  
+              <span xid="scan_span" __cid="cjqMR7z" class="cjqMR7z">扫码通过</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cjqMR7z" xid="incBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-pricetags&quot;,&quot;label&quot;:&quot;增值服务&quot;,&quot;target&quot;:&quot;incCnt&quot;}" __cid="cjqMR7z"> 
+              <i xid="i2" class="icon-pricetags cjqMR7z" __cid="cjqMR7z"/>  
+              <span xid="inc_span" __cid="cjqMR7z" class="cjqMR7z">增值服务</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cjqMR7z" xid="mineBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-contact&quot;,&quot;label&quot;:&quot;我&quot;,&quot;target&quot;:&quot;mineCnt&quot;}" __cid="cjqMR7z"> 
+              <i xid="i4" class="icon-ios7-contact cjqMR7z" __cid="cjqMR7z"/>  
+              <span xid="mine_span" __cid="cjqMR7z" class="cjqMR7z">我</span> 
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cjqMR7z" class="cjqMR7z">.x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p4e3c00006d36451197db6d1ef5597491-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+      </div> 
+    </div>  
+    <div class="x-contents-content cjqMR7z" xid="map" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cjqMR7z"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar cjqMR7z" xid="mapPanel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjqMR7z"> 
+        <div class="x-panel-top cjqMR7z" xid="mapTop" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjqMR7z"> 
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjqMR7z" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;地图&quot;}" __cid="cjqMR7z"> 
+            <div class="x-titlebar-left cjqMR7z" xid="div_title_left2" __cid="cjqMR7z"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cjqMR7z" xid="yBackBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:yBackBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cjqMR7z"> 
+                <i xid="i15" class="icon-chevron-left cjqMR7z" __cid="cjqMR7z"/>  
+                <span xid="span14" __cid="cjqMR7z" class="cjqMR7z"/> 
+              </a> 
+            </div>  
+            <div class="x-titlebar-title cjqMR7z" xid="div_title_title2" id="tops2" __cid="cjqMR7z">地图</div>  
+            <div class="x-titlebar-right  cjqMR7z" xid="div_title_right2" __cid="cjqMR7z"> 
+              <div class="empty cjqMR7z" __cid="cjqMR7z"/>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjqMR7z" xid="posBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:posBtnClick" data-config="{&quot;disabled&quot;:true,&quot;icon&quot;:&quot;icon-android-location&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjqMR7z"> 
+                <i xid="i6" class="icon-android-location cjqMR7z" __cid="cjqMR7z"/>  
+                <span xid="span6" __cid="cjqMR7z" class="cjqMR7z"/> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cjqMR7z" xid="mapContent" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjqMR7z"/>  
+        <style __cid="cjqMR7z" class="cjqMR7z">.x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pf5309aef579f4e3e99fe6bbd6db75a66-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+      </div> 
+    </div> 
+  </div> 
+</div>
